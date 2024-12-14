@@ -308,14 +308,5 @@ export default {
   z-index: 10;
 }
 
-.cart-component {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #fff;
-  padding: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-}
+
 </style>

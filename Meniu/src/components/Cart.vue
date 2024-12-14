@@ -75,41 +75,44 @@ export default {
 
 <style scoped>
 .cart {
-  padding: 15px;
-  background-color: #ffffff;
+  padding: 20px;
+  background-color: #fdfdfd;
   border-radius: 12px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 600px;
-  margin: 20px auto;
+  margin: 30px auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 }
 
 .cart-summary {
   text-align: center;
-  padding: 15px;
+  padding: 12px 20px;
   font-size: 20px;
-  cursor: pointer;
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
+  font-weight: 600;
+  color: #444;
+  background-color: #f7f7f7;
   border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .cart-summary:hover {
-  background-color: #e9ecef;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cart-details {
   margin-top: 20px;
 }
 
-.cart h2 {
-  font-size: 28px;
-  color: #444;
+h2 {
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  color: #444;
 }
 
 .cart-items {
@@ -119,68 +122,74 @@ export default {
 }
 
 .cart-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
   align-items: center;
-  padding: 15px;
-  margin-bottom: 15px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  padding: 12px 16px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .item-name {
   font-size: 18px;
   font-weight: 500;
-  flex: 2;
+  color: #333;
 }
 
 .item-controls {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 8px;
-  flex: 1;
 }
 
 .quantity-btn {
-  padding: 8px 12px;
-  font-size: 16px;
-  background-color: #4CAF50;
-  color: #fff;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s ease;
 }
 
 .quantity-btn:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
 .item-quantity {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
-  width: 40px;
-  font-weight: bold;
+  min-width: 30px;
 }
 
 .item-price {
-  font-size: 18px;
-  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
   color: #555;
   text-align: right;
-  font-weight: 600;
 }
 
 .remove-btn {
-  padding: 6px 12px;
+  padding: 6px 10px;
   font-size: 14px;
-  background-color: #ff4d4d;
   color: white;
+  background-color: #ff4d4d;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .remove-btn:hover {
@@ -188,36 +197,38 @@ export default {
 }
 
 .total {
-  text-align: right;
-  font-size: 20px;
   margin-top: 20px;
-  color: #222;
+  text-align: right;
+  font-size: 18px;
   font-weight: bold;
+  color: #222;
 }
 
 .checkout-button {
   display: block;
   width: 100%;
   padding: 12px;
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 18px;
-  background-color: #007bff;
   color: white;
+  background-color: #28a745;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .checkout-button:hover {
-  background-color: #0056b3;
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .empty-cart {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   color: #888;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 </style>
