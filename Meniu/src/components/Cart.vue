@@ -24,7 +24,23 @@
         <div class="total">
           <strong>Viso: {{ totalPrice.toFixed(2) }} €</strong>
         </div>
-        <button class="checkout-button" @click="$emit('show-order')">
+
+        <!-- Patvirtinimo varnelė -->
+        <div class="confirmation">
+          <input
+            type="checkbox"
+            id="confirm-order"
+            v-model="isConfirmed"
+          />
+          <label for="confirm-order">Patvirtinu užsakymą</label>
+        </div>
+
+        <!-- Rodyti padavėjui mygtukas -->
+        <button
+          class="checkout-button"
+          :disabled="!isConfirmed"
+          @click="$emit('show-order')"
+        >
           Rodyti padavėjui
         </button>
       </div>
@@ -48,6 +64,7 @@ export default {
   data() {
     return {
       showDetails: false, // Valdo krepšelio detalios informacijos rodymą
+      isConfirmed: false, // Valdo varnelės būseną
     };
   },
   computed: {
@@ -230,5 +247,24 @@ h2 {
   font-size: 16px;
   color: #888;
   margin-top: 15px;
+}
+.confirmation {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #555;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.checkout-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 </style>
