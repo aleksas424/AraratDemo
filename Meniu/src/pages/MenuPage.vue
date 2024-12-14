@@ -308,5 +308,7 @@ export default {
   z-index: 10;
 }
 
-
+.cart-component {
+  position: fixed;
+}
 </style>
