@@ -310,5 +310,9 @@ export default {
 
 .cart-component {
   position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px;
+  cursor: pointer;
 }
 </style>
