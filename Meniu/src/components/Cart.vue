@@ -46,10 +46,12 @@ export default {
       this.$emit("checkout");
     },
     updateQuantity(item, amount) {
-      const newQuantity = item.quantity + amount;
-      if (newQuantity > 0) {
-        this.$emit("update-quantity", { item, quantity: newQuantity });
-      }
+  const newQuantity = item.quantity + amount;
+  if (newQuantity > 0) {
+    // Siųsti { item, amount } kaip įvykį
+    this.$emit("update-quantity", { item, amount });
+  }
+
     },
   },
 };

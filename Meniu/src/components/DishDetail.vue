@@ -36,18 +36,21 @@ export default {
     };
   },
   methods: {
-    updateQuantity(amount) {
-      if (this.quantity + amount >= 1) {
-        this.quantity += amount;
-      }
-    },
-    addToCart() {
-      if (this.quantity > 0) {
-        this.$emit("add-to-cart", { ...this.dish, quantity: this.quantity });
-      } else {
-        alert("Pasirinkite kiekį, kuris yra bent 1.");
-      }
-    },
+  updateQuantity(amount) {
+    const newQuantity = this.quantity + amount;
+    // Uždrausti neigiamas reikšmes ir įsitikinti, kad tai būtų skaičius
+    if (newQuantity >= 1 && !isNaN(newQuantity)) {
+      this.quantity = newQuantity;
+    }
+  },
+  addToCart() {
+    if (this.quantity > 0 && !isNaN(this.quantity)) {
+      this.$emit("add-to-cart", { ...this.dish, quantity: this.quantity });
+    } else {
+      alert("Pasirinkite kiekį, kuris yra bent 1.");
+    }
+  },
+
   },
 };
 </script>

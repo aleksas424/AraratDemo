@@ -188,24 +188,35 @@ export default {
       this.selectedDish = null;
     },
     addToCart(dish) {
-      const existingDish = this.cart.find(item => item.name === dish.name);
-      if (existingDish) {
-        existingDish.quantity += 1;  // Increase quantity if already in cart
-      } else {
-        this.cart.push({ ...dish, quantity: 1 }); // Add new dish with initial quantity
-      }
+  // Patikrinkite, ar ši prekė jau yra krepšelyje
+  const existingDish = this.cart.find(item => item.name === dish.name);
+  if (existingDish) {
+    // Jei jau yra, tiesiog padidinkite kiekį pagal perduotą kiekį
+    existingDish.quantity += dish.quantity;
+  } else {
+    // Jei nėra, pridėkite naują prekę su perduotu kiekiu
+    this.cart.push({ ...dish, quantity: dish.quantity });
+  }
+
     },
     removeFromCart(dish) {
       this.cart = this.cart.filter(item => item !== dish); // Remove from cart
     },
     updateCartQuantity({ item, amount }) {
-      const dish = this.cart.find(cartItem => cartItem.name === item.name);
-      if (dish) {
-        dish.quantity += amount;
-        if (dish.quantity <= 0) {
-          this.cart = this.cart.filter(cartItem => cartItem !== dish);
-        }
-      }
+  const dish = this.cart.find(cartItem => cartItem.name === item.name);
+  if (dish) {
+    // Atnaujinkite kiekį
+    const newQuantity = dish.quantity + amount;
+    if (newQuantity > 0) {
+      dish.quantity = newQuantity;
+    } else {
+      // Jei kiekis pasiekia 0, pašaliname prekę
+      this.cart = this.cart.filter(cartItem => cartItem !== dish);
+    } 
+    // No need to remove the dish if quantity is 0, we just prevent it from going below 1.
+  }
+
+
     },
     showOrderDetails() {
       this.showOrderModal = true; // Rodo modalą su užsakymo detalėmis
