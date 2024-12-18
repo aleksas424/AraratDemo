@@ -24,7 +24,7 @@
 .background-image {
   position: relative;
   height: 100vh;
-  background-image: url('../assets/Restoranas.png');
+  /* background-image: url('../assets/Restoranas.png'); */
   background-size: cover;
   background-position: center;
   color: white;
@@ -33,6 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Restoranas.png')
 }
 
 .dark-overlay {
@@ -41,7 +42,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) to make it darker/lighter */
+  /* background-color: rgba(0, 0, 0, 0.5); Adjust the opacity (0.5) to make it darker/lighter */
 }
 
 .start-order-btn {

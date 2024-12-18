@@ -240,7 +240,7 @@ export default {
 }
 
 .category-item {
-  padding: 10px 15px;
+  padding: 30px 45px;
   border: 1px solid #ddd;
   border-radius: 20px;
   background-color: #f9f9f9;
@@ -257,18 +257,20 @@ export default {
 
 .dishes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 15px;
+  padding:20px 0;
 }
 
 .dish-card {
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   text-align: center;
   background-color: #fff;
   position: relative;
   transition: box-shadow 0.3s;
+  margin: 10px 0px;
 }
 
 .dish-card:hover {
@@ -277,7 +279,7 @@ export default {
 
 .dish-image {
   width: 100%;
-  height: 120px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -314,5 +316,49 @@ export default {
   right: 20px;
   padding: 15px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .dishes-grid {
+    grid-template-columns: repeat(2, 1fr); /* Sumažinkite tinklo stulpelių skaičių */
+    gap: 10px;
+  }
+
+  .dish-card {
+    margin: 5px 0;
+  }
+
+  .dish-image {
+    height: 150px; /* Sumažinkite paveikslėlio aukštį */
+  }
+
+  .cart-component {
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .dishes-grid {
+    grid-template-columns: 1fr; /* Vienas stulpelis */
+  }
+
+  .dish-card {
+    margin: 5px 0;
+  }
+
+  .category-item {
+    font-size: 10px;
+    padding: 8px 15px;
+  }
+
+  .cart-component {
+    font-size: 12px;
+    padding: 8px;
+  }
 }
 </style>

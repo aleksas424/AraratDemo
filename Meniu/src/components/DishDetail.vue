@@ -74,7 +74,7 @@ export default {
 /* Paveikslėlis */
 .dish-image {
   width: 100%;
-  max-height: 300px;
+  max-height: 500px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -184,7 +184,7 @@ export default {
 /* Responsyvus dizainas */
 @media (max-width: 600px) {
   .dish-detail {
-    padding: 20px 10px;
+    padding: 50px 10px;
   }
 
   .dish-name {
