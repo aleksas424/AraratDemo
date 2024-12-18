@@ -16,7 +16,7 @@
     <!-- Patiekalų tinklas -->
     <div class="dishes-grid">
       <div class="dish-card" v-for="(dish, index) in filteredDishes" :key="index" @click="selectDish(dish)">
-        <img :src="dish.image" :alt="dish.name" class="dish-image" />
+        <img src="https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=" :alt="dish.name" class="dish-image"  />
         <div class="dish-info">
           <h3 class="dish-name">{{ dish.name }}</h3>
           <p class="dish-price">{{ dish.price }} €</p>
