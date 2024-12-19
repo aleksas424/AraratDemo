@@ -4,12 +4,16 @@
     <v-container>
       <v-row class="text-center" align="center" justify="center">
         <v-col cols="12" md="8">
-          <h1 class="headline font-weight-bold animated fadeInUp">Autentiška. Gardu</h1>
-          <p class="subheading animated fadeInUp">Skoniai, kurie kviečia sugrįžti.</p>
-          <v-btn
+          <h1 class="headline font-weight-bold animated fadeInUp">
+            <span class="highlight">Autentiška.</span> Gardu
+          </h1>
+          <p class="subheading animated fadeInUp">
+            Skoniai, kurie <span class="italic">kviečia sugrįžti</span>.
+          </p>
+          <v-btn size="x-large"
             class="start-order-btn animated bounceIn"
             to="/menu"
-            rounded 
+            rounded
           >
             Pradėti Užsakymą
           </v-btn>
@@ -32,59 +36,59 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Saskyk.jpg')
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Saskyk.jpg');
 }
-
-
 
 .headline {
   font-weight: 700;
-  font-size: 30px;
-  text-transform: uppercase; 
+  font-size: 40px; /* Padidintas dydis */
+  text-transform: uppercase;
+  line-height: 1.2; /* Gražesnis tarpas tarp eilučių */
 }
 
-
-
-.start-order-btn {
-  margin-top: 20px;
-  font-size: 18px;
-  border: 2px solid #ffffff;
-  background-color: transparent;
-  color: #ffffff;
-  animation: bounceIn 1s;
-}
-
-.headline {
-  animation: fadeInUp 1s ease-in-out;
+.highlight {
+  color: #ff7e5f; /* Akcento spalva */
+  text-shadow: 1px 1px 10px rgba(255, 126, 95, 0.5); /* Švytėjimas */
 }
 
 .subheading {
-  animation: fadeInUp 1.5s ease-in-out;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.italic {
+  font-style: italic; /* Dėmesį traukiantis stilius */
 }
 
-@keyframes bounceIn {
-  0% {
-    transform: scale(0);
-    opacity: 0;
+.start-order-btn {
+  margin-top: 30px;
+  font-size: 18px;
+  padding: 10px 30px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.start-order-btn:hover {
+  background-color: #ff7e5f;
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 30px;
   }
-  60% {
-    transform: scale(1.1);
+
+  .subheading {
+    font-size: 16px;
   }
-  100% {
-    transform: scale(1);
-    opacity: 1;
+
+  .start-order-btn {
+    font-size: 16px;
+    padding: 8px 20px;
   }
 }
 </style>
