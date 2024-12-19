@@ -47,7 +47,7 @@
 }
 
 .highlight {
-  color: #ff7e5f; /* Akcento spalva */
+  color: #d2e40a; /* Akcento spalva */
   text-shadow: 1px 1px 10px rgba(255, 126, 95, 0.5); /* Švytėjimas */
 }
 
@@ -72,23 +72,24 @@
 }
 
 .start-order-btn:hover {
-  background-color: #ff7e5f;
-  color: #ffffff;
+  background-color: #d2e40a;
+  color: black;
   transform: translateY(-5px);
+  border: 2px solid black;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1200px) {
   .headline {
-    font-size: 30px;
+    font-size: 50px; /* Didesnis dydis dideliems ekranams */
   }
 
   .subheading {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .start-order-btn {
-    font-size: 16px;
-    padding: 8px 20px;
+    font-size: 20px; /* Didesnis mygtuko tekstas */
   }
+
 }
 </style>

@@ -1,14 +1,12 @@
 <template>
   <div class="cart">
-    <!-- Krepšelio užsakymų skaičius -->
     <div class="cart-summary" @click="toggleCartDetails">
       🛒 Užsakymų skaičius: <strong>{{ cartItemsCount }}</strong>
     </div>
 
-    <!-- Detali informacija apie krepšelį -->
     <div v-if="showDetails" class="cart-details">
       <h2>Krepšelis</h2>
-      <div v-if="cartItems.length > 0">
+      <div v-if="cartItems.length > 0" class="cart-items-container">
         <ul class="cart-items">
           <li v-for="item in cartItems" :key="item.name" class="cart-item">
             <span class="item-name">{{ item.name }}</span>
@@ -24,23 +22,11 @@
         <div class="total">
           <strong>Viso: {{ totalPrice.toFixed(2) }} €</strong>
         </div>
-
-        <!-- Patvirtinimo varnelė -->
         <div class="confirmation">
-          <input
-            type="checkbox"
-            id="confirm-order"
-            v-model="isConfirmed"
-          />
+          <input type="checkbox" id="confirm-order" v-model="isConfirmed" />
           <label for="confirm-order">Patvirtinu užsakymą</label>
         </div>
-
-        <!-- Rodyti padavėjui mygtukas -->
-        <button
-          class="checkout-button"
-          :disabled="!isConfirmed"
-          @click="$emit('show-order')"
-        >
+        <button class="checkout-button" :disabled="!isConfirmed" @click="$emit('show-order')">
           Rodyti padavėjui
         </button>
       </div>
@@ -63,27 +49,26 @@ export default {
   },
   data() {
     return {
-      showDetails: false, // Valdo krepšelio detalios informacijos rodymą
-      isConfirmed: false, // Valdo varnelės būseną
+      showDetails: false,
+      isConfirmed: false,
     };
   },
   computed: {
     cartItemsCount() {
-      // Suskaičiuoja bendrą užsakymų skaičių
       return this.cartItems.reduce((sum, item) => sum + item.quantity, 0);
     },
   },
   methods: {
     toggleCartDetails() {
-      this.showDetails = !this.showDetails; // Perjungia detalių rodymą
+      this.showDetails = !this.showDetails;
     },
     removeFromCart(item) {
-      this.$emit("remove", item);
+      this.$emit('remove', item);
     },
     updateQuantity(item, amount) {
       const newQuantity = item.quantity + amount;
       if (newQuantity > 0) {
-        this.$emit("update-quantity", { item, amount });
+        this.$emit('update-quantity', { item, amount });
       }
     },
   },
@@ -130,6 +115,12 @@ h2 {
   text-align: center;
   margin-bottom: 15px;
   color: #444;
+}
+
+.cart-items-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
 .cart-items {
@@ -248,6 +239,7 @@ h2 {
   color: #888;
   margin-top: 15px;
 }
+
 .confirmation {
   display: flex;
   align-items: center;
@@ -266,5 +258,37 @@ input[type="checkbox"] {
 .checkout-button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .cart {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .cart-item {
+    grid-template-columns: 1fr auto;
+    gap: 5px;
+  }
+
+  .item-name {
+    font-size: 16px;
+  }
+
+  .item-price,
+  .item-controls {
+    font-size: 14px;
+  }
+
+  .quantity-btn,
+  .remove-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .checkout-button {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
 </style>

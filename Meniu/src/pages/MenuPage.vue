@@ -237,6 +237,17 @@ export default {
   gap: 10px;
   overflow-x: auto;
   white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+}
+
+.categories::-webkit-scrollbar {
+  height: 6px;
+}
+
+.categories::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 10px;
 }
 
 .category-item {
@@ -246,7 +257,16 @@ export default {
   background-color: #f9f9f9;
   cursor: pointer;
   font-size: 14px;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-item:hover {
+  background-color: #ffe600;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .category-item.active {
@@ -259,7 +279,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 15px;
-  padding:20px 0;
+  padding: 20px 0;
 }
 
 .dish-card {
@@ -269,12 +289,13 @@ export default {
   text-align: center;
   background-color: #fff;
   position: relative;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, transform 0.2s;
   margin: 10px 0px;
 }
 
 .dish-card:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
 }
 
 .dish-image {
@@ -319,7 +340,6 @@ export default {
 }
 
 @media (max-width: 768px) {
-
   .dishes-grid {
     grid-template-columns: repeat(2, 1fr); /* Sumažinkite tinklo stulpelių skaičių */
     gap: 10px;
@@ -341,8 +361,6 @@ export default {
 }
 
 @media (max-width: 480px) {
-
-
   .dishes-grid {
     grid-template-columns: 1fr; /* Vienas stulpelis */
   }
