@@ -4,13 +4,12 @@
     <v-container>
       <v-row class="text-center" align="center" justify="center">
         <v-col cols="12" md="8">
-          <h1 class="headline font-weight-bold animated fadeInUp">Welcome to Ararat Restoranas!</h1>
-          <p class="subheading animated fadeInUp">Atraskite skaniausius patiekalus.</p>
+          <h1 class="headline font-weight-bold animated fadeInUp">Autentiška. Gardu</h1>
+          <p class="subheading animated fadeInUp">Skoniai, kurie kviečia sugrįžti.</p>
           <v-btn
-            color="primary"
-            large
             class="start-order-btn animated bounceIn"
             to="/menu"
+            rounded 
           >
             Pradėti Užsakymą
           </v-btn>
@@ -23,8 +22,8 @@
 <style scoped>
 .background-image {
   position: relative;
+  width: 100%;
   height: 100vh;
-  /* background-image: url('../assets/Restoranas.png'); */
   background-size: cover;
   background-position: center;
   color: white;
@@ -33,21 +32,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Restoranas.png')
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Saskyk.jpg')
 }
 
-.dark-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5); Adjust the opacity (0.5) to make it darker/lighter */
+
+
+.headline {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase; 
 }
+
+
 
 .start-order-btn {
   margin-top: 20px;
   font-size: 18px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
   animation: bounceIn 1s;
 }
 

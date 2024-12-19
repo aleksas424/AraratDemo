@@ -26,10 +26,14 @@ export default defineConfig({
     Components(),
     ViteFonts({
       google: {
-        families: [{
-          name: 'Roboto',
-          styles: 'wght@100;300;400;500;700;900',
-        }],
+        families: [ {
+          name: 'Montserrat',
+          styles: 'wght@100;200;300;400;500;600;700;800;900', // Include weights you need
+        },
+        {
+          name: 'Work Sans', // Replace with Nunito or another font if you prefer
+          styles: 'wght@100;200;300;400;500;600;700;800;900', // Include weights you need
+        },],
       },
     }),
   ],

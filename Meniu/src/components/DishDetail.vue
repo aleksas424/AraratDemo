@@ -38,21 +38,22 @@ export default {
     };
   },
   methods: {
-    updateQuantity(amount) {
-      const newQuantity = this.quantity + amount;
-      if (newQuantity >= 1 && !isNaN(newQuantity)) {
-        this.quantity = newQuantity;
-      }
-    },
-    addToCart() {
-      if (this.quantity > 0 && !isNaN(this.quantity)) {
-        this.$emit("add-to-cart", { ...this.dish, quantity: this.quantity });
-      } else {
-        alert("Pasirinkite kiekį, kuris yra bent 1.");
-      }
-    },
+  updateQuantity(amount) {
+    const newQuantity = this.quantity + amount;
+    if (newQuantity >= 1 && !isNaN(newQuantity)) {
+      this.quantity = newQuantity;
+    }
   },
-};
+  addToCart() {
+    if (this.quantity > 0 && !isNaN(this.quantity)) {
+      this.$emit("add-to-cart", { ...this.dish, quantity: this.quantity });
+      this.$emit("close"); // Uždaro langą
+    } else {
+      alert("Pasirinkite kiekį, kuris yra bent 1.");
+    }
+  },
+},}
+
 </script>
 
 <style scoped>
