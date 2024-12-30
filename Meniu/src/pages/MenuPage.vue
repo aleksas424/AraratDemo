@@ -65,7 +65,7 @@ export default {
     return {
       categories: [
         "Visi", "Sriubos", "Salotos", "Aviena", "Kiauliena ir jautiena",
-        "Chačapuri", "Vištiena", "Žūvis", "Užkandžiai", "Desertai", "Karštieji patiekalai"
+        "Chačapuri", "Vištiena", "Žūvis", "Užkandžiai", "Desertai", "Karštieji patiekalai","Karštieji patiekalai","Karštieji gėrimai",
       ],
       selectedCategory: "Visi",
       selectedDish: null,
@@ -443,6 +443,84 @@ export default {
           price: 4.0,
           image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
           category: "Desertai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Juoda kava",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Kakava",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Espresso",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Dvigubas espresso",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Juoda kava su pienu",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Cappuccino",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Latte",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Latte su sirupu",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Arbata",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Armėniškų žolelių arbata",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Arbata su imberiniu vynu(nealkoholinis)",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Karštas vynas",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
+          description: "A refreshing mix of seasonal fruits.",
+        },{
+          name: "Šaltalankių arbata su medum",
+          price: 4.0,
+          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          category: "Karštieji gėrimai",
           description: "A refreshing mix of seasonal fruits.",
         },
       ],
