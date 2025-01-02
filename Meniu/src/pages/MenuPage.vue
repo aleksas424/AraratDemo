@@ -786,6 +786,15 @@ export default {
   text-align: center;
   min-width: 120px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+  display: flex; /* Kad būtų galima išlygiuoti tekstą vertikaliai */
+  align-items: center; /* Vertikalus centravimas */
+  justify-content: center; /* Horizontalus centravimas */
+  text-align: center; /* Teksto išlygiavimas centre */
+  overflow-wrap: break-word; /* Automatinis žodžių laužymas */
+  word-wrap: break-word; /* Suderinamumas su senesniais naršyklėmis */
+  word-break: break-word; /* Ilgų žodžių pertraukimas */
+  line-height: 1.2; /* Aukštis tarp eilučių, jei tekstas ilgas */
 }
 
 .category-item:hover {
