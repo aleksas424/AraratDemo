@@ -438,7 +438,7 @@ export default {
           price: 4.5,
           image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
           category: "Desertai",
-          description: "A refreshing mix of seasonal fruits.",
+          description: "",
         },{
           name: "Pieno ir ledų kokteilis",
           price: 4.0,
