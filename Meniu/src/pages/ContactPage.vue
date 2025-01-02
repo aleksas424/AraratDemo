@@ -18,11 +18,11 @@
     <p>
       Teiraukitės telefonais:
       <br />
-      Vilniuje: <a href="tel:+37052334569">8 5 2334569</a>
+      Vilniuje: <a href="tel:+37000000000">8 000000000</a>
       <br />
-      Šiauliuose: <a href="tel:+370841520858">8 41 520858</a>
+      Šiauliuose: <a href="tel:+370800000">8 00000000</a>
       <br />
-      El. paštu: <a href="mailto:banketai@ararat-restoranas.lt">banketai@ararat-restoranas.lt</a>
+      El. paštu: <a href="mailto:">@-restoranas.lt</a>
     </p>
 
     <v-row class="mt-4">
