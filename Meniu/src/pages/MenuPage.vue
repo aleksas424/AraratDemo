@@ -16,7 +16,7 @@
     <!-- Patiekalų tinklas -->
     <div class="dishes-grid">
       <div class="dish-card" v-for="(dish, index) in filteredDishes" :key="index" @click="selectDish(dish)">
-        <img src="dish-image" :alt="dish.name" class="dish-image"  />
+        <img :src="dish.image" :alt="dish.name" class="dish-image" />
         <div class="dish-info">
           <h3 class="dish-name">{{ dish.name }}</h3>
           <p class="dish-price">{{ dish.price }} €</p>
