@@ -137,7 +137,7 @@ export default {
         {
           name: "Charčio su aviena",
     price: 8.0,
-    image: "/assets/Sriubos/Charciosuaviena.png", // Reliatyvus kelias
+    image: "/assets/Charciosuaviena.png", // Reliatyvus kelias
     category: "Sriubos",
     description: "Aštri kaukazietiška avienos sriuba",
         },
