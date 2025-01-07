@@ -137,7 +137,7 @@ export default {
         {
            name: "Charčio su aviena",
            price: 8.0,
-           image: "src/assets/Sriubos/Charčio su aviena.png",
+           image: "src/assets/Sriubos/Charčiosuaviena.png",
            category: "Sriubos",
            description: "Aštri kaukazietiška avienos sriuba",
         },
@@ -158,7 +158,7 @@ export default {
         {
           name: "Armėniški barščiai",
           price: 6.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: "src/assets/Sriubos/Armėniškibarščiai.png",
           category: "Sriubos",
           description: "Turtingo skonio, armėniškomis žolelėmis praturtinti barščiai su jautiena",
         },
