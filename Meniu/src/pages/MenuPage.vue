@@ -135,11 +135,11 @@ export default {
           description: "Kepta duona, svogūnu žiedai, kalmarų žiedai, rūkytos kiaulių ausytės, rūkyta dešra, riešutai (JĖGA), alyvuoges, pikantiškas padažas",
         },
         {
-           name: "Charčio su aviena",
-           price: 8.0,
-           image: "src/assets/Sriubos/Charciosuaviena.png",
-           category: "Sriubos",
-           description: "Aštri kaukazietiška avienos sriuba",
+          name: "Charčio su aviena",
+    price: 8.0,
+    image: "/assets/Sriubos/Charciosuaviena.png", // Reliatyvus kelias
+    category: "Sriubos",
+    description: "Aštri kaukazietiška avienos sriuba",
         },
         {
           name: "Charčio su jautiena",
