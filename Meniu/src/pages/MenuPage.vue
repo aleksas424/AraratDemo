@@ -158,7 +158,7 @@ export default {
         {
           name: "Armėniški barščiai",
           price: 6.0,
-          image: "src/assets/Sriubos/Armeniskibarsciai.png",
+          image: new URL('@/assets/Sriubos/Armeniskibarsciai.png', import.meta.url).href,
           category: "Sriubos",
           description: "Turtingo skonio, armėniškomis žolelėmis praturtinti barščiai su jautiena",
         },
