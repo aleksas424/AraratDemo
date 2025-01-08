@@ -144,7 +144,7 @@ export default {
         {
           name: "Charčio su jautiena",
           price: 6.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/jautiena.png', import.meta.url).href,
           category: "Sriubos",
           description: "Aštri kaukazietiška jautienos sriuba",
         },
@@ -165,7 +165,7 @@ export default {
         {
           name: "Akroška",
           price: 5.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/Akroska.png', import.meta.url).href,
           category: "Sriubos",
           description: "Vasariška šalta sriuba su žalumynais, pateikiama su keptomis bulvėmis",
         },
