@@ -6,6 +6,15 @@
 
     <v-divider class="my-4"></v-divider>
 
+    <h2>Renginių organizavimas</h2>
+    <p>
+      Artėja vestuvės, krikštynos, gimtadienis ar tiesiog maloni šventė, o Jūs neturite laiko rūpintis maisto ruošimu? 
+      Šventinius rūpesčius palikite mums!
+    </p>
+    <p>
+      imageimport.meta.url).href,
+
+    </p>
     <p>
       Teiraukitės telefonais:
       <br />
