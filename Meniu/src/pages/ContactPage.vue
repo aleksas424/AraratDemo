@@ -2,19 +2,10 @@
   <v-container>
     <h1>Kontaktai</h1>
     <p>Telefonas: <a href="tel:+37060000000">+370 600 00000</a></p>
-    <p>El. paštas: <a href="mailto:info@ararat-restoranas.lt">info@ararat-restoranas.lt</a></p>
+    <p>El. paštas: <a href="mailto:info@ararat-restoranas.lt">info@.lt</a></p>
 
     <v-divider class="my-4"></v-divider>
 
-    <h2>Renginių organizavimas</h2>
-    <p>
-      Artėja vestuvės, krikštynos, gimtadienis ar tiesiog maloni šventė, o Jūs neturite laiko rūpintis maisto ruošimu? 
-      Šventinius rūpesčius palikite mums!
-    </p>
-    <p>
-      Nustebinsime Jus ir Jūsų svečius skaniais vieno kąsnio užkandžiais, salotomis, karštais patiekalais, desertais. 
-      Pagamintą maistą galime pristatyti į namus ar į biurą, taip pat šventinius pobūvius siūlome rengti ir mūsų restoranuose.
-    </p>
     <p>
       Teiraukitės telefonais:
       <br />
