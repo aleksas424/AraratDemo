@@ -172,7 +172,7 @@ export default {
         {
           name: "Baklažanų suktinukai",
           price: 8.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/araratosuktinukai.png', import.meta.url).href,
           category: "Salotos",
           description: "Keptas baklažanas, fermentinis sūris, graikiniai riešuysi, česnakas, majonezas, lavašas",
         },  {
@@ -184,19 +184,19 @@ export default {
         },  {
           name: "Graikiškos salotos",
           price: 7.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/graikiskossalotos.png', import.meta.url).href,
           category: "Salotos",
           description: "Pomidorai, agurkai, feta sūris, alyvuogės, salotų lapai, graikiniai riešutai, raudoni svogūnai ir alyvuogių alėjus",
         },  {
           name: "Vištienos grilio salotos",
           price: 9.5,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/vistienosgriliosalotos.png', import.meta.url).href,
           category: "Salotos",
           description: "Ant ugnies kepta vištienos krūtinėle, salotų lapai, paprika, kepti avinžirniai, medaus ir garstyčių užpilas",
         },  {
           name: "Lašišos grilio salotos",
           price: 7.5,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/lasisosgriliosalotos.png', import.meta.url).href,
           category: "Salotos",
           description: "Ant grilio kepta lašiša, morkos, agurkai, sezamo sėklos, citrinos ir alyvuogių sliejaus užpilas",
         },  {
@@ -208,13 +208,13 @@ export default {
         },  {
           name: "Tabulė salotos",
           price: 7.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/tabule.png', import.meta.url).href,
           category: "Salotos",
           description: "Kuskuso kruopos, pomidorai, agurkai, žolelės, česnakas, užpilas",
         },  {
           name: "Arkhajakan",
           price: 16.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/arkhajakan.png', import.meta.url).href,
           category: "Aviena",
           description: "Avienos nugarinės šašlykas su kauliuku",
         },  {
@@ -232,19 +232,19 @@ export default {
         },  {
           name: "Avienos plovas",
           price: 9.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/plovassuaviena.png', import.meta.url).href,
           category: "Aviena",
           description: "Avienos plovas su marinuotais agurkais ir alyvuogėmis",
         },  {
           name: "Vištienos šašlykas",
           price: 9.5,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/vistienossaslykas.png', import.meta.url).href,
           category: "Vištiena",
           description: "Vištienos šašlykas",
         },{
           name: "Havik",
           price: 10.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/havik.png', import.meta.url).href,
           category: "Vištiena",
           description: "Vištienos file, apelsinų sulčių ir graikinių riešutų padaže",
         },{
@@ -256,7 +256,7 @@ export default {
         },{
           name: "Vištienos ir cukinijų šašlykas",
           price: 10.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/vistienosircukinijos.png', import.meta.url).href,
           category: "Vištiena",
           description: "Ant ugnies kepta malta vištiena, pateikiama su garnyru ir pikantišku padažu",
         },{
@@ -274,19 +274,19 @@ export default {
         },{
           name: "Mėgstamiausias šašlykas",
           price: 10.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/megstamiausiaschorovac.png', import.meta.url).href,
           category: "Kiauliena ir jautiena",
           description: "Tradicinis kiaulėnos sprandinės šašlykas",
         },{
           name: "Firminis ARARAT chorovac",
           price: 11.5,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/chorovac.png', import.meta.url).href,
           category: "Kiauliena ir jautiena",
           description: "Du kiaulėnos sprandinės kepsniai",
         },{
           name: "Ypatingasis įdarytas chorovac",
           price: 12.5,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/chorovac.png', import.meta.url).href,
           category: "Kiauliena ir jautiena",
           description: "Kiaulėnos sprandinės kepsniai įdaryti paprika, pomidoru arba saulėje džiovintu pomidoru",
         },{
@@ -358,37 +358,37 @@ export default {
         },{
           name: "Koldūnai su aviena",
           price: 10.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/koldunai.png', import.meta.url).href,
           category: "Karštieji patiekalai",
           description: " Armėniški naminiai koldūnai su aviena",
         },{
           name: "Koldūnai su kiauliena",
           price: 8.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/koldunai.png', import.meta.url).href,
           category: "Karštieji patiekalai",
           description: "Armėniški naminiai koldūnai su kiauliena",
         },{
           name: "Koldūnai su vištiena",
           price: 8.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/koldunai.png', import.meta.url).href,
           category: "Karštieji patiekalai",
           description: "Armėniški naminiai koldūnai su vištiena",
         },{
           name: "Koldūnai su pievagrybiais",
           price: 8.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/koldunai.png', import.meta.url).href,
           category: "Karštieji patiekalai",
           description: "Armėniški naminiai koldūnai su pievagrybiais",
         },{
           name: "Tolma",
           price: 8.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/tolma.png', import.meta.url).href,
           category: "Karštieji patiekalai",
           description: "Balandėliai vynuogių lapuose",
         },{
           name: "Adžabsandal",
           price: 8.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/Adziabsandalis.png', import.meta.url).href,
           category: "Karštieji patiekalai",
           description: "Karštos daržovių šašlyko salotos",
         },{
@@ -400,19 +400,19 @@ export default {
         },{
           name: "Pachlava",
           price: 5.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/pachliava.png', import.meta.url).href,
           category: "Desertai",
           description: "Tradicinis daugiasluoksnis graikinių riešutų ir medaus pyragas",
         },{
           name: "Serine",
           price: 5.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/serine.png', import.meta.url).href,
           category: "Desertai",
           description: "Švelnus varškės ir grietinėlės desertas su vaisiais, ir uogų sirupu",
         },{
           name: "Megr u macun",
           price: 5.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/megur.png', import.meta.url).href,
           category: "Desertai",
           description: "Jogurto, medaus, graikinių riešutų, persiku desertas",
         },{
@@ -424,7 +424,7 @@ export default {
         },{
           name: "Gardus gruzdinti varškėtukai",
           price: 6.0,
-          image: "https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=1024x1024&w=is&k=20&c=-cx2OEvdsCqs2TPK_EttPr7QZoTmeNww-Wa2njBeCR0=",
+          image: new URL('@/assets/Sriubos/varskeciai.png', import.meta.url).href,
           category: "Desertai",
           description: "Gardus gruzdinti varškėtukai",
         },{
